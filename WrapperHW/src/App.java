@@ -2,9 +2,11 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println(checkStringLenght(scanString()));
-        countNumbers("1test2String3");
-        rowNumsSum("1test223String312");
+        String inputString = scanString();
+        System.out.println("Input string: " + inputString);
+        System.out.println("String lenght >20 & <100: " + checkStringLenght(inputString));
+        countNumbers(inputString);
+        rowNumsSum(inputString);
     }
 
     public static String scanString() {
