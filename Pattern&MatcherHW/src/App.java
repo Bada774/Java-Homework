@@ -7,17 +7,17 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         
-        // System.out.println("Enter number: ");
-        // String number = scanner.nextLine();
-        // System.out.printf("String contains number: %s\n", checkNumber(number));
+        System.out.println("Enter number: ");
+        String number = scanner.nextLine();
+        System.out.printf("String contains number: %s\n", checkNumber(number));
         
-        // System.out.println("\nEnter code: ");
-        // String code = scanner.nextLine();
-        // System.out.printf("Code matches the pattern: %s\n", checkCode(code));
+        System.out.println("\nEnter code: ");
+        String code = scanner.nextLine();
+        System.out.printf("Code matches the pattern: %s\n", checkCode(code));
 
-        // System.out.println("\nEnter time: ");
-        // String time = scanner.nextLine();
-        // System.out.printf("Time format is correct: %s\n", checkTime(time));
+        System.out.println("\nEnter time: ");
+        String time = scanner.nextLine();
+        System.out.printf("Time format is correct: %s\n", checkTime(time));
 
         System.out.println("\nEnter card number: ");
         String cardNumber = scanner.nextLine();
