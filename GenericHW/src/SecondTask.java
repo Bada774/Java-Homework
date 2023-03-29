@@ -22,7 +22,7 @@ public class SecondTask {
 
         // Fourth
         Integer[] intArrayForFourth = {1, 2, 3};
-        String[] stringArrayForFourth = {"Fourth", "ourthF", "urthFo"};
+        String[] stringArrayForFourth = {"Fourth", "ourthF", "urthFo", "1", "2", "3"};
         System.out.printf("\nFourth:\nReversed arrays: %s, %s\n", info(inverse(intArrayForFourth)), info(inverse(stringArrayForFourth)));
     }
 
@@ -54,13 +54,9 @@ public class SecondTask {
     // Fourth
     public static <T> T[] inverse(T[] inputArray) {
         T[] outputArray = inputArray;
-        T lastValue = inputArray[inputArray.length - 1];
-        int index = 0;
         for (int i = inputArray.length - 1; i >= 0; i--) {
-            outputArray[i] = inputArray[index];
-            index++;
+            outputArray[i] = inputArray[i];
         }
-        outputArray[0] = lastValue;
         return outputArray;
     }
 }
