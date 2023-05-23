@@ -1,0 +1,2 @@
+a bb aab aba ccc
+c bb aaa
